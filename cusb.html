@@ -161,16 +161,16 @@
                 
                 <h2 style="color: #70a9d3;"><span id="subtitle">SHAFTS</span></h2>
                 <p>To determine the shaft diameter and material, I calculated the shear stress, twist angle, factor of safety, and mass for the longest potential driveshaft length we would use. These calculations were then iterated through numerous shaft diameters and materials using a custom MATLAB script. The final shaft was selected to be a 0.5" 630 stainless steel shaft due to its high strength and low mass.</p>
-                <img src="img/cusb/shaftmat.png" width=600px class="center"/>
+                <img src="img/cusb/shaftmat.PNG" width=600px class="center"/>
                 
                 <h2 style="color: #70a9d3;"><span id="subtitle">GEARS</span></h2>
                 <p>The gears will be straight bevel gears. While helical bevel gears are quiter, they require more difficult calculations and are less readily available. To select the gears, I calculated the gear contact stress, bending stress, and factors of safety of a variety of off the shelf gears using a custom MATLAB script. From this, an 18-tooth 12 DP AISI 1045 steel bevel gear will be used. These will have a factor of safety of 0.609 unhardened. In light of this, we will through harden them with an HRC of 36-40, increasing the factor of safety to 1.54. These gears will be run with a 1:1 ratio in an oil bath and axially constrained with custom shims.</p>
-                <img src="img/cusb/gearselect.png" width=600px class="center"/>
+                <img src="img/cusb/gearselect.PNG" width=600px class="center"/>
                 
                 <h2 style="color: #70a9d3;"><span id="subtitle">BEARINGS</span></h2>
                 <p>The bearings used for this system must be able to accommodate both radial and axial loads from the motor and thrust produced. For this, there are three options: deep groove ball bearings, ball bearings and thrust bearings, and tapered roller bearings. Deep groove ball bearings can accommodate both raidal and axial loads. This option is ideal if the load ratings fit our system, the axial load is the limiting factor. Ball bearings accommodate raidal loads while thrust bearings accommodate axial loads. A combination of both will allow us to select bearings specific to the radial and axial loads. Finally, taper roller bearings can also accommodate both radial and axial loads, however, they are difficult to manufactur alignment, must be preloaded, and are very large and overbuilt in comparison to the other options. As a result, I chose to design with both ball and thrust bearings as it is the simplest option.</p>
                 <p>After selecting the gears, I was able to calculate the bearing loads on the system using force balances. This was the final parameter needed to fully define the design.</p>
-                <img src="img/cusb/bearingload.png" width=600px class="center"/>
+                <img src="img/cusb/bearingload.PNG" width=600px class="center"/>
              </div>
         </div>
     </div>
@@ -200,10 +200,10 @@
                 <p>There are two bearing housings in the lower unit, one in the front and one in the rear. These house the press fitted bearings and shaft seals. There are multiple o-rings to keep water out of the gearbox and keep the oil in. They will each insert into the housing as one unit and have different bolt patterns to prevent them from being assembled the wrong way.</p>
             </div>
             <div class="col-sm-6">
-                <img src="img/cusb/frontthrust.jpg" width=300px class="center"/>
+                <img src="img/cusb/frontthrust.JPG" width=300px class="center"/>
             </div>
             <div class="col-sm-6">
-                <img src="img/cusb/frontthrust-section.jpg" width=300px class="center"/>
+                <img src="img/cusb/frontthrust-section.JPG" width=300px class="center"/>
             </div>
             
             <div class="col-sm-12">
@@ -213,16 +213,16 @@
                 
                 <h2 style="color: #70a9d3;"><span id="subtitle">DRIVESHAFT UNIT</span></h2>
                 <p>The driveshaft unit houses the driveshaft and coupler. In addition, it serves as the mounting point for the motor and steering mechanisms.</p>
-                <img src="img/cusb/dsh-asm-label.png" width=700px class="center"/>
+                <img src="img/cusb/dsh-asm-label.PNG" width=700px class="center"/>
                 
                 <h2 style="color: #21648A;"><span id="subsubtitle">bearing housings<span></h2>
                 <p>There are two bearing housings in the driveshaft unit, one on top and one on the bottom. The bearing housing on top doubles as the shaft coupler housing. The main difference between these housings as opposed to the ones on the lower unit is that they are mounted to the driveshaft housing with radially mounted bolts.</p>
             </div>
             <div class="col-sm-6">
-                <img src="img/cusb/lowerthrust.jpg" width=350px class="center"/>
+                <img src="img/cusb/lowerthrust.JPG" width=350px class="center"/>
             </div>
             <div class="col-sm-6">
-                <img src="img/cusb/lowerthrust-section.jpg" width=350px class="center"/>
+                <img src="img/cusb/lowerthrust-section.JPG" width=350px class="center"/>
             </div>
             
             <div class="col-sm-12">
