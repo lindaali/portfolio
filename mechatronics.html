@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Mechatronics | Linda Li</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="projectstyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel='icon' href='img/icon1.png' type='image/x-icon' sizes="16x16">
+        <script src="https://kit.fontawesome.com/3018dc5619.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <h2 class="col-sm-6"><b><a href="#" style="color: #000000;">LINDA LI</a></b></h2>
+            <nav class="col-sm-6">
+                <p><a href="#" style="color: #000000;">about</a></p>
+                <div class="dropdown">
+                    <p>projects</p>
+                    <div class="dropdown-content">
+                        <a href="#">Tesla</a>
+                        <a href="#">Solar Boat</a>
+                        <a href="#">VitaTech</a>
+                        <a href="#">Premier Paint</a>
+                        <a href="#">ChemE Car</a>
+                        <a href="#">Mechatronics</a>
+                        <a href="#">Water Pump</a>
+                    </div>
+                </div>
+                <p><a href="Li-Resume-FA19.pdf" download target="_blank" style="color: #000000;">resume</a></p>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="jumbotron" style="background-image: url('img/mechatronics/candid.jpg');">
+        <div class="container">
+            <h1><u>MECHATRONICS</u></h1>
+            <h2>Autonomous Robot</h2>
+            <h3>fall 2018</h3>
+        </div>
+    </section>
+    
+    <div id="banner">
+        <div class="container">
+            <div class= row">
+                <div class="col-sm-12" id="banner-title">
+                    <h2>— SUMMARY —</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" id="banner-summary">
+                    <i class="material-icons" style="font-size:60px; color:#CC2800;">schedule</i>
+                    <h4><b><u>TIMELINE</u></b></h4>
+                    <p>Fall 2018<br>August - December<br>15 weeks</p>
+
+                </div>
+                <div class="col-sm-4" id="banner-summary">
+                    <i class="material-icons" style="font-size:60px; color:#CC2800;">face</i>
+                    <h4><b><u>ROLE</u></b></h4>
+                    <p>Coded a locating algorithm from scratch<br>Wired H-bridges and logic gates<br>Designed and built robot body</p>
+                </div>
+                <div class="col-sm-4" id="banner-summary">
+                    <i class="material-icons" style="font-size:50px; color:#CC2800; padding-bottom:10px;">build</i>
+                    <h4><b><u>SKILLS</u></b></h4>
+                    <p>Pure C<br>Circuitry<br>Rapid Prototyping</p>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-sm-12">
+                    <hr style="border: 1.5px solid #e6e6e6"
+                </div>
+            </div>
+            -->
+        </div>
+    </div>    
+    
+    <div class="container-fluid" id="bg-section" style="background-color: #FFF7F6;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2><span id="intro-text">— INTRODUCTION —</span></h2>
+                <p>In my Mechatronics class, I was paired with two students with diverse backgrounds and industry experience to <b>build an autonomous robot to compete in the annual Cube Craze competition</b>. We used skills learned in class to <b>build circuits and program microcontrollers in C</b>. Our robot ultimately won the first round and lost the following two (in a close tie!).</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid" id="no-bg">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2><span id="intro-text">— CUBE CRAZE —</span></h2>
+                <p>The objective of the Cube Craze competition was to create a robot controlled by an Arduino Uno to clear as many cubes as possible from a starting zone into the opponent's in the span of one minute. The field was split into two different colored zones surrounded by a black border. At the start of each round, 10 cubes were placed in the middle third of each zone while the robots were placed at the back of their respective zone. Once the round began, no human interactions were allowed. The team with the lowest score - least number of cubes in their zone - at the end of the round won.</p>
+                
+                <iframe width="560" height="315" class="center" src="https://www.youtube.com/embed/BR0-ushrSgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <h2 style="padding-top: 80px;"><span id="intro-text">— BUILD —</span></h2>
+                <p>As a base for the robot body, we were provided a Boe-Bot Robot Kit. This consisted of a metal chassis, three servo motors, and wheels. We were able to "purchase" extra components as part of our material budget. When designing the mechanism for moving the cubes, we considered feasibility and error sensitivity. We moved forward with a shovel mechanism that would push the cubes around the field with an expansion feature to extend its reach. As per the competition rules, the initial robot dimensions could change during the round. The expansion feature is essentially a rack and pinion, however, rather than gears, we used the resistance between the plates to create linear motion from the rotary motion of the servos. This mechanism was lasercut from 0.25" acrylic. The rest of the body consisted of the battery, a breadboard, and an Arduino mounted on an elevated plate.</p>
+            </div>
+            <div class=col-sm-1></div>
+            <div class="col-sm-5">
+                <img src="img/mechatronics/initialpos.jpg" width=400px class="center"/>    
+            </div>
+            <div class="col-sm-5">
+                <img src="img/mechatronics/comppos.jpg" width=400px class="center"/>    
+            </div>
+            <div class=col-sm-1></div>
+                
+            <div class="col-sm-12">    
+                <h2><span id="mid-text">— CIRCUITRY —</span></h2>
+                <p>In addition to the mechanical components, we were also provided an array of sensors including a color sensor, QTIs, and ultrasonic transducers. To maintain simplicity, we only utilized the color sensor to navigate. Since the field was separated by three distinct colors, we were able to accurately detect changes in colors and respond accordingly. In addition, we wired two H-bridges to individually control the wheels on the robot on the breadboard.</p>
+                <img src="img/mechatronics/circuit.jpg" width=500px class="center"/>
+            
+                <h2><span id="mid-text">— CODE —</span></h2>
+                <p>Instead of using the built in Arduino software to code our robot, we used Atmel Studio to code in Pure C and imported it into the Arduino Uno. Since we had wired two separate H-bridges for each servo controling the wheels, we were able to move the robot forwards, backwards, and turning both left and right. This was done by turning pins on and off on the Arduino in our code. In addition, since the color sensor read different light frequencies to determine colors, we were able to record the initial zone color and calculate the frequency differences when it encountered a color change.</p>
+                
+                <p>Our strategy for the competition was to automatically sweep the entire field multiple times. The algorithm outline was as follows:</p>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <p style="padding-right:0;">Start Sequence<br><span class="tab">Move forward<br></span><span class="tab">Extend shovel<br></span><span class="tab">Record starting color</span><br>Color polling every 0.2 seconds<br>If the color detected is the opposing zone<br><span class="tab">Move backwards<br></span><span class="tab">Turn right 90 degrees<br></span><span class="tab">Move forward<br></span><span class="tab">Turn to left 90 degrees<br></span><span class="tab">Move forward<br></span>If the color detected is black<br><span class="tab">Turn left 120 degrees<br></span><span class="tab">Move forward<br></span><span class="tab">Turn right 30 degrees</span></p>
+            </div>
+            <div class="col-sm-5">    
+                <img src="img/mechatronics/algorithm.png" width=375px/>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="bg-section" style="background-color: #FFF7F6;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2><span id="intro-text">— COMPETITION —</span></h2>
+                <p>Our robot's main strengths were its reliability, large reach, and speed. Something many other groups had issues with during competition was staying within the field borders. Since the field was elevated from the floor, it virtually impossible to return onto the field. Unlike other groups, we opted out of using QTIs in addition to the color sensor for locating. This allowed us to optimize and test our color sensor algorithm to ensure that it responded consistently and accurately. One of the main weaknesses was a lack of an offensive or defensive mechanism. Instead of creating a locating algorithm to sweep the board like we did, other groups chose to sabatoge the competing robot, thus leaving the field clear for their win.</p>
+                
+                <p>During competition, we hit a few snags, mainly due to the code not working as we intended it to. While the color sensor still operated as tested, the algorithm we developed to sweep the board did not. Instead of sweeping across the board systematically as coded, the robot first turned twice and began moving forward. However, because we were consistently polling for color, the robot was generally able to reorient itself enough to sweep through the majority of the board. We believe that this may be due to differencees in lighting between our testing setup and the competition lighting.</p>
+                
+                <p>Our first round went relatively smoothly, in spite of the movement issues discussed earlier. The opposing robot quickly drove off the field allowing us to easily collect cubes. In our second round, we were able to collect many cubes, but, our robot collided with the other and both flew off the field. This resulted in a rematch that eventually ended in a tiebreak where they counted the number of cubes that fell from the field. Unfortunatley, this resulted in a loss by one cube. Finally, due to our lack of defense mechanisms, the opponent's robot easily pushed our robot off the board, effectively ending the round.</p>
+            </div>
+            <div class="col-sm-3" style="padding-top:50px; padding-bottom:50px;">
+                <iframe width="177.5" height="315" class="center" src="img/mechatronics/round1.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-3" style="padding-top:50px; padding-bottom:50px;">
+                <iframe width="177.5" height="315" class="center" src="img/mechatronics/round2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-3" style="padding-top:50px; padding-bottom:50px;">
+                <iframe width="177.5" height="315" class="center" src="img/mechatronics/tiebreak.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-3" style="padding-top:50px; padding-bottom:50px;">
+                <iframe width="177.5" height="315" class="center" src="img/mechatronics/round3.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-4" style="padding-top:50px;">
+                <img src="img/mechatronics/front.png" height=300px class="center"/>
+            </div>
+            <div class="col-sm-4" style="padding-top:50px;">
+                <img src="img/mechatronics/frontopen.png" height=300px class="center"/>
+            </div>
+            <div class="col-sm-4" style="padding-top:50px; padding-bottom:50px;">
+                <img src="img/mechatronics/iso.png" height=300px class="center"/>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <footer class="container-fluid" style="background-color:#CC2800";>
+        <div class="row">
+            <div class="col-sm-12">
+                <span id="foot-text" style="font-size: 35px;">
+                    <!--
+                    <a href="#" style="color: #ffffff; padding: 0 10px;"><i class="fas fa-home"></i></a>
+                    -->
+                    <a href="mailto:ll568@cornell.edu" style="color: #ffffff; padding: 0 10px;"><i class="fas fa-envelope-square"></i></a>
+                    <a href="https://www.linkedin.com/in/lindali98/" target="_blank" style="color: #ffffff; padding: 0 10px;"><i class="fab fa-linkedin"></i></a>
+                    <a href="Li-Resume-FA19.pdf" download target="_blank"  style="color: #ffffff; padding: 0 10px;"><i class="fas fa-save"></i></a>
+                </span>
+                <h2 style="font-size: 24px; color: #ffffff; opacity: 0.8;"><span id="foot-text">LINDA LI</span></h2>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+</body>
+</html>
